@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer", "Freela
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.ViewModels", "FreelanceFinancer.ViewModels\FreelanceFinancer.ViewModels.csproj", "{AEBB058B-10CC-4109-BA2B-11D8C6BC9C71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.Models", "FreelanceFinancer.Models\FreelanceFinancer.Models.csproj", "{3C38519D-9C64-4613-AAB3-C3A3513DCACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.Logging", "FreelanceFinancer.Logging\FreelanceFinancer.Logging.csproj", "{042FAC54-E98F-464A-B510-E6F78C15DFD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AEBB058B-10CC-4109-BA2B-11D8C6BC9C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEBB058B-10CC-4109-BA2B-11D8C6BC9C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEBB058B-10CC-4109-BA2B-11D8C6BC9C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C38519D-9C64-4613-AAB3-C3A3513DCACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C38519D-9C64-4613-AAB3-C3A3513DCACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C38519D-9C64-4613-AAB3-C3A3513DCACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C38519D-9C64-4613-AAB3-C3A3513DCACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042FAC54-E98F-464A-B510-E6F78C15DFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042FAC54-E98F-464A-B510-E6F78C15DFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042FAC54-E98F-464A-B510-E6F78C15DFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042FAC54-E98F-464A-B510-E6F78C15DFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

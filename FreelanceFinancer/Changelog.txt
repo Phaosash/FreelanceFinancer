@@ -1,0 +1,5 @@
+﻿Project overview:
+This project is intended to be used as a tool for freelancers for keeping track of there
+expenses, and for costing out different projects.
+
+05/01/2026	-	Initial project creation and setup
