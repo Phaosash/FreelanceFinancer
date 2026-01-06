@@ -1,0 +1,18 @@
+Freelance Financer is intended to act as a personalised tool for freelancers to track expeses,
+in addition to project cost calculations. Other features may also get added over time.
+
+06/01/2026
+	- Change front end to WPF.
+		- Will possibly look at doing a web deployment using .NET Core later.
+	- Started implementing basic page layouts.
+	- Fixed really weird issue preventing the side pannel from collapsing.
+		- Issue was with initial relay command not being detected, created a new command that does
+		  the same thing, this was was detected and works as intended.
+
+05/01/2026 
+	- Initial project setup
+	- Github repo setup
+	- Changed aspets of project setup.
+		- Started with Avalonia (but there new account model was causing issues).
+		- Changed to MAUI Hybrid.
+		- Switch to ASP.NET Core Web.
