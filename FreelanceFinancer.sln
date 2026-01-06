@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.CostCalcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeelanceFinancer.ExpenseTracking", "FeelanceFinancer.ExpenseTracking\FeelanceFinancer.ExpenseTracking.csproj", "{DA83F97D-9D87-491E-915C-AED2DFAF8E22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.Frontend", "FreelanceFinancer.Frontend\FreelanceFinancer.Frontend.csproj", "{8B99AB0A-3B50-4765-ABC5-3BEBFFE699EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.Windows", "FreelanceFinancer.Windows\FreelanceFinancer.Windows.csproj", "{6EE9467F-C1AD-4E44-85A8-3D7F4702B38F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{DA83F97D-9D87-491E-915C-AED2DFAF8E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA83F97D-9D87-491E-915C-AED2DFAF8E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA83F97D-9D87-491E-915C-AED2DFAF8E22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B99AB0A-3B50-4765-ABC5-3BEBFFE699EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B99AB0A-3B50-4765-ABC5-3BEBFFE699EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B99AB0A-3B50-4765-ABC5-3BEBFFE699EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B99AB0A-3B50-4765-ABC5-3BEBFFE699EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE9467F-C1AD-4E44-85A8-3D7F4702B38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE9467F-C1AD-4E44-85A8-3D7F4702B38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE9467F-C1AD-4E44-85A8-3D7F4702B38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE9467F-C1AD-4E44-85A8-3D7F4702B38F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
