@@ -19,9 +19,7 @@ public partial class MainPageViewModel: ObservableObject {
         }
     }
 
-    [RelayCommand] private void ToggleSidebar () => ModifySidbar();
-
-    private void ModifySidbar (){
+    [RelayCommand] private void ToggleSidebar (){
         if (_isSidebarCollapsed){
             SidebarWidth = new GridLength(MaxSidebarWidth);
             _isSidebarCollapsed = false;
