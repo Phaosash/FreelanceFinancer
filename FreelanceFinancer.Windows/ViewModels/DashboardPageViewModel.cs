@@ -1,5 +1,5 @@
 ﻿namespace FreelanceFinancer.Windows.ViewModels;
 
-internal class DashboardPageViewModel {
+public class DashboardPageViewModel {
 
 }

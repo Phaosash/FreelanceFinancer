@@ -4,12 +4,12 @@ using System.Windows.Controls;
 namespace FreelanceFinancer.Windows.Views;
 
 public partial class DashboardPageView : UserControl {
-    private readonly DashboardPageViewModel viewModel;
-
+    DashboardPageViewModel viewModel;
+    
     public DashboardPageView (){
         InitializeComponent();
-        viewModel = new DashboardPageViewModel();
 
+        viewModel = new DashboardPageViewModel();
         DataContext = viewModel;
     }
 }

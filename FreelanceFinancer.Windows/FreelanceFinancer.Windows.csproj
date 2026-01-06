@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FreelanceFinancer.Logging\FreelanceFinancer.Logging.csproj" />
+  </ItemGroup>
+
 </Project>
