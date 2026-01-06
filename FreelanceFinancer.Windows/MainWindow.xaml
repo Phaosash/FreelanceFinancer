@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FreelanceFinancer.Windows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Freelance Financer" Height="450" Width="800"
+        xmlns:ctrls="clr-namespace:FreelanceFinancer.Windows.Views">
     <Grid>
-
+        <ctrls:MainPageView />
     </Grid>
 </Window>
