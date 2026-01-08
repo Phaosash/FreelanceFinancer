@@ -13,6 +13,16 @@
     </UserControl.DataContext>
     
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!--    Header  -->
+        <TextBlock Text="Cost Calculations" FontSize="18"
+                   Grid.Row="0" Margin="5"/>
+
+        <!--    Main content area       -->
         
     </Grid>
 </UserControl>
