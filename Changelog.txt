@@ -1,18 +1,38 @@
 Freelance Financer is intended to act as a personalised tool for freelancers to track expeses,
 in addition to project cost calculations. Other features may also get added over time.
 
+15/01/2026
+	+ Taking a different approach to the project. Going to attempt to make the costing system completly
+	  dynamic, in that the user can essentially create the costings form and save it as a template.
+	  This hopefully will allow for the calculations system to be used across any industry, without
+	  needing to hard code/define the costing system for every type of industry.
+	+ Added a console app to test the basic functionality of the new system. This will be expanded upon
+	  as development continues.
+	- Removed all old project(s) as they no longer seemed to fit the new direction I'm looking at taking
+	  the project.
+	+ Moved formula evaluation logic to its own class.
+	+ Added a formula management class.
+	+ Fixed issue that was causing one of the expressions from being evaluated correctly.
+	+ Added programmig requirements guide, to help stear the projects development.
+
+14/01/2026
+	+ Added placeholder views for the cost calculation system.
+
+08/01/2026
+	+ Made some general changes.
+
 06/01/2026
-	- Change front end to WPF.
-		- Will possibly look at doing a web deployment using .NET Core later.
-	- Started implementing basic page layouts.
-	- Fixed really weird issue preventing the side pannel from collapsing.
-		- Issue was with initial relay command not being detected, created a new command that does
+	+ Change front end to WPF.
+		+ Will possibly look at doing a web deployment using .NET Core later.
+	+ Started implementing basic page layouts.
+	+ Fixed really weird issue preventing the side pannel from collapsing.
+		+ Issue was with initial relay command not being detected, created a new command that does
 		  the same thing, this was was detected and works as intended.
 
 05/01/2026 
-	- Initial project setup
-	- Github repo setup
-	- Changed aspets of project setup.
-		- Started with Avalonia (but there new account model was causing issues).
-		- Changed to MAUI Hybrid.
-		- Switch to ASP.NET Core Web.
+	+ Initial project setup
+	+ Github repo setup
+	+ Changed aspets of project setup.
+		+ Started with Avalonia (but there new account model was causing issues).
+		+ Changed to MAUI Hybrid.
+		+ Switch to ASP.NET Core Web.

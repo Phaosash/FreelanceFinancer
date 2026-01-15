@@ -1,0 +1,274 @@
+﻿
+# Dynamic Project Cost Calculator
+
+**Junior Developer Implementation Outline**
+
+## 1. What You Are Building (Plain English)
+
+You are building a **generic calculation system** that:
+
+* Takes **inputs** (numbers entered by a user)
+* Applies **formulas defined as data**
+* Groups results into **categories**
+* Returns a **cost breakdown and total**
+
+Nothing in the system should assume a specific industry.
+All behavior comes from **templates**, not hardcoded logic.
+
+---
+
+## 2. Key Concepts You Must Understand First
+
+Before starting, make sure you understand:
+
+* **Formulas are strings**, stored as data (not methods)
+* **Fields are named inputs**, like `weight_g` or `hourly_rate`
+* **Templates describe everything**:
+
+  * Which inputs exist
+  * Which formulas exist
+  * How formulas are grouped
+* The **calculation engine is generic** and reused everywhere
+
+---
+
+## 3. High-Level System Parts
+
+You will be working with four main parts:
+
+1. **Template Management**
+2. **Input Handling**
+3. **Calculation Engine**
+4. **Results Output**
+
+These parts should be loosely coupled.
+
+---
+
+## 4. Step-by-Step Build Plan
+
+### Step 1: Template Structure (Start Here)
+
+**Goal:** Define how templates are represented in data.
+
+#### What to Build
+
+* A data structure that represents a template containing:
+
+  * Template name
+  * List of input fields
+  * List of formulas
+  * Categories that group formulas
+
+#### Requirements
+
+* Each input field must have:
+
+  * A unique key
+  * A display name
+  * A numeric value provided at runtime
+* Each formula must have:
+
+  * A unique key
+  * A formula expression (string)
+  * A category it belongs to
+* Categories must have:
+
+  * A name
+  * A list of formulas assigned to them
+
+#### Done When
+
+* A template can be fully described using only data
+* No calculation logic is embedded in the template
+
+---
+
+### Step 2: Input Collection and Validation
+
+**Goal:** Accept user-provided values for template fields.
+
+#### What to Build
+
+* A way to accept numeric input values for all fields defined in a template
+* A dictionary/map that links:
+
+  * Field key → numeric value
+
+#### Requirements
+
+* All required fields must be present
+* Inputs must be numeric
+* Missing or invalid inputs must be detectable
+
+#### Done When
+
+* You can load a template and know exactly which inputs are required
+* You can store user inputs in a structured format
+
+---
+
+### Step 3: Basic Formula Evaluation
+
+**Goal:** Evaluate a single formula using input values.
+
+#### What to Build
+
+* A formula evaluator that:
+
+  * Takes a formula string
+  * Resolves field references using the input dictionary
+  * Produces a numeric result
+
+#### Requirements
+
+* Support basic arithmetic:
+
+  * Addition
+  * Subtraction
+  * Multiplication
+  * Division
+* Formula logic must not be hardcoded per formula
+
+#### Done When
+
+* A formula string can be evaluated correctly using input values
+* Results match a known correct value (e.g., manual calculation)
+
+---
+
+### Step 4: Multiple Formulas and Dependencies
+
+**Goal:** Evaluate multiple formulas in the correct order.
+
+#### What to Build
+
+* Support for:
+
+  * Multiple formulas in one template
+  * Formulas that reference results of other formulas
+
+#### Requirements
+
+* Formula results must be stored and reusable
+* Dependencies must resolve correctly
+* The engine must not assume a fixed formula order
+
+#### Done When
+
+* All formulas in a template can be evaluated in one pass
+* Formula results are available for later calculations
+
+---
+
+### Step 5: Categories and Aggregation
+
+**Goal:** Group and sum formula results.
+
+#### What to Build
+
+* Category-level totals that:
+
+  * Sum all formulas within a category
+* Optional overall total across all categories
+
+#### Requirements
+
+* Categories are defined in the template
+* Aggregation logic is generic and reusable
+
+#### Done When
+
+* Each category produces a numeric total
+* The system can return a full cost breakdown
+
+---
+
+### Step 6: Calculation Engine Wrapper
+
+**Goal:** Create a single entry point for calculations.
+
+#### What to Build
+
+* A calculation service that:
+
+  * Accepts a template
+  * Accepts input values
+  * Executes all formulas
+  * Returns results by formula and category
+
+#### Requirements
+
+* The engine should not know anything about industries
+* The same engine works for all templates
+
+#### Done When
+
+* One method call produces a full project cost result
+
+---
+
+### Step 7: Template Persistence
+
+**Goal:** Save and load templates.
+
+#### What to Build
+
+* Storage for templates:
+
+  * File-based or database-backed
+* Ability to:
+
+  * Load templates by ID
+  * Save new or updated templates
+
+#### Requirements
+
+* Stored templates must be readable and editable
+* No recompilation required to add a new template
+
+#### Done When
+
+* Templates persist between application runs
+
+---
+
+### Step 8: API Endpoints (Backend)
+
+**Goal:** Expose the system via HTTP.
+
+#### What to Build
+
+Endpoints for:
+
+* Listing available templates
+* Loading a specific template
+* Submitting inputs for calculation
+* Returning calculation results
+* Saving project instances (optional)
+
+#### Done When
+
+* The calculator can be used by any frontend
+
+---
+
+## 5. What NOT to Do
+
+* Do NOT hardcode formulas
+* Do NOT write industry-specific logic
+* Do NOT create one method per calculation
+* Do NOT mix calculation logic with UI logic
+
+---
+
+## 6. How You Know You’re Done
+
+A junior dev is finished when:
+
+* A new template can be added without code changes
+* The same engine evaluates all formulas
+* Inputs, formulas, categories, and results are clearly separated
+* The system can explain **how** a total was calculated
+
+---
