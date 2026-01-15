@@ -1,0 +1,47 @@
+{
+    "templateName": "3D Printing Project",
+    "categories": [
+        {
+            "name": "Materials",
+            "fields": [
+                {
+                    "id": "weight_g",
+                    "label": "Estimated Weight (g)"
+                },
+                {
+                    "id": "material_cost_per_kg",
+                    "label": "Material Cost (per kg)"
+                },
+                {
+                    "id": "material_extra_cost",
+                    "label": "Additional Expenses"
+                }
+            ],
+            "formulas": [
+                {
+                    "id": "total_material_cost",
+                    "expression": "((field:weight_g / 1000) * field:material_cost_per_kg) + field:material_extra_cost"
+                }
+            ]
+        },
+        {
+            "name": "Labour",
+            "fields": [
+                {
+                    "id": "labour_hours",
+                    "label": "Estimated Hours"
+                },
+                {
+                    "id": "hourly_rate",
+                    "label": "Hourly Rate"
+                }
+            ],
+            "formulas": [
+                {
+                    "id": "total_labour_cost",
+                    "expression": "field:labour_hours * field:hourly_rate"
+                }
+            ]
+        }
+    ]
+}
