@@ -1,0 +1,42 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="FreelanceFinancer.App.Views.CostTemplateMakerPageView">
+  <Grid RowDefinitions="Auto, *">
+    <!--  Page Title  -->
+    <TextBlock Grid.Row="0" Text="Pricing Template Creator" Margin="5"
+            FontSize="18" FontWeight="SemiBold" />
+
+    <!--  Main Content Area   -->
+    <Grid Grid.Row="1" ColumnDefinitions="*, Auto, *" ShowGridLines="True">
+        <!--  First Column Section    -->
+        <StackPanel Spacing="5" Grid.Column="0" Margin="5">
+            <TextBlock Text="Instructions" />
+            
+            <!--  TODO: Add instructions for creating the form    -->
+        </StackPanel>
+
+        <!-- Second Column Section -->
+        <StackPanel Spacing="5" Grid.Column="1" Margin="5">
+            <TextBlock Text="Creation Form" />
+
+            <StackPanel Orientation="Horizontal" Spacing="5">
+				<TextBlock Text="Name: " VerticalAlignment="Center" />
+                <TextBox VerticalAlignment="Center" MinWidth="200" />
+            </StackPanel>
+
+			<Button Content="Add Category" />
+            
+            <!-- Button to Save the completed template  -->
+            <Button Content="Create Template" VerticalAlignment="Bottom" />
+        </StackPanel>
+
+        <!--    Third Column Section    -->
+        <StackPanel Grid.Column="2" Spacing="5" Margin="5">
+			<TextBlock Text="Output Preview" />
+        </StackPanel>
+    </Grid>
+  </Grid>
+</UserControl>

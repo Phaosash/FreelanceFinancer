@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApp", "ConsoleTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.PricingLib", "FreelanceFinancer.PricingLib\FreelanceFinancer.PricingLib.csproj", "{3E62AA15-4B43-4E40-B3F8-63FF09ADAFF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.App", "FreelanceFinancer.App\FreelanceFinancer.App.csproj", "{96609D4B-1972-4C72-865A-F9AC935A12E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceFinancer.Shared.DTOs", "FreelanceFinancer.Shared.DTOs\FreelanceFinancer.Shared.DTOs.csproj", "{4AA091BE-7565-4CC5-BA2E-B5B97BB10C56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{3E62AA15-4B43-4E40-B3F8-63FF09ADAFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E62AA15-4B43-4E40-B3F8-63FF09ADAFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E62AA15-4B43-4E40-B3F8-63FF09ADAFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96609D4B-1972-4C72-865A-F9AC935A12E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96609D4B-1972-4C72-865A-F9AC935A12E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96609D4B-1972-4C72-865A-F9AC935A12E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96609D4B-1972-4C72-865A-F9AC935A12E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA091BE-7565-4CC5-BA2E-B5B97BB10C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA091BE-7565-4CC5-BA2E-B5B97BB10C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA091BE-7565-4CC5-BA2E-B5B97BB10C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA091BE-7565-4CC5-BA2E-B5B97BB10C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

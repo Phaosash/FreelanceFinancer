@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1360" d:DesignHeight="768"
+             x:Class="FreelanceFinancer.App.Views.MainPageView">
+  <SplitView IsPaneOpen="True" OpenPaneLength="300" CompactPaneLength="48">
+	  <!--  Side panel section  -->
+      <SplitView.Pane>
+		  <Grid RowDefinitions="Auto, *, Auto">
+			<!--  Navigation Buttons  -->
+            <StackPanel Orientation="Vertical" Grid.Row="1" Margin="5" Spacing="10"
+                        VerticalAlignment="Center">  
+                <Button Content="Home" ToolTip.Tip="Home" />
+                <Button Content="Template" ToolTip.Tip="Template" />
+                <Button Content="Cost" ToolTip.Tip="Cost" />
+            </StackPanel>
+          </Grid>
+      </SplitView.Pane>
+
+      <!--  Main page content section   -->
+      <SplitView.Content>
+		  <Grid> </Grid>
+      </SplitView.Content>
+  </SplitView>
+</UserControl>
