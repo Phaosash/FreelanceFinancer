@@ -1,6 +1,12 @@
 Freelance Financer is intended to act as a personalised tool for freelancers to track expeses,
 in addition to project cost calculations. Other features may also get added over time.
 
+30/01/2026
+	+ Added User Control for adding the categories on the template creation page.
+	+ Created User Control for managing the fields on the template creation page.
+	+ Added new class for handing the logic for the categories creation.
+	+ Added a class for handing the logic of the fields creation.
+
 19/01/2026
 	+ Added Avalonia project to start working on front development.
 	+ Added basic layout for the cost calculation template page.

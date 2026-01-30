@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+             x:Class="FreelanceFinancer.App.Views.Controls.CategoryView">
+  <StackPanel Orientation="Vertical" Spacing="5" MaxWidth="450">
+	  <!--  Name Section    -->
+      <TextBlock Text="Category Name*" FontSize="18" />
+      <TextBox />
+
+      <!--  Add Field Section   -->
+      <TextBlock Text="Fields" FontSize="18" Margin="0, 10, 0, 0" />
+      <!--  TODO: Add container to store the instantiated field objects     -->
+      <Button Content="Add Field" />
+
+      <!--  Subtotal Section    -->
+      <TextBlock Text="Category Sub-Total*" FontSize="18" Margin="0, 10, 0, 0" />
+      <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+		  <StackPanel Orientation="Vertical" Spacing="5" MinWidth="220">
+              <TextBlock Text="Reference Name" />
+              <TextBox />
+          </StackPanel>
+          
+          <StackPanel Orientation="Vertical" Spacing="5" MinWidth="220">
+              <TextBlock Text="Formula" />
+              <TextBox />
+          </StackPanel>
+      </StackPanel>
+
+      <TextBlock Text="* required information." FontSize="8" 
+                 VerticalAlignment="Bottom" />
+  </StackPanel>
+</UserControl>

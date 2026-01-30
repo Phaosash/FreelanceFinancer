@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+             x:Class="FreelanceFinancer.App.Views.Controls.FieldsView">
+  <StackPanel Orientation="Vertical" Spacing="5">
+	  <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center">
+		  <!--  Field Name Section  -->
+          <StackPanel Orientation="Vertical" MinWidth="220">
+              <TextBlock Text="Name" />
+              <TextBox />
+          </StackPanel>
+
+          <!--  Field Formula Section   -->
+          <!--  This needs to be optional on the backend, as not all fields
+                will require a formula  -->
+          <StackPanel Orientation="Vertical" MinWidth="220">
+              <TextBlock Text="Formula" />
+              <TextBox />
+          </StackPanel>
+      </StackPanel>
+  </StackPanel>
+</UserControl>
